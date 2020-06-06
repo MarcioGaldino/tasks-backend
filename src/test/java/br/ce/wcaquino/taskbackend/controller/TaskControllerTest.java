@@ -36,7 +36,7 @@ public class TaskControllerTest {
 		try {
 			controller.save(todo);
 		} catch (ValidationException e) {
-			Assert.assertEquals("Fill the tasks description", e.getMessage());
+			Assert.assertEquals("Fill the task description", e.getMessage());
 		}
 	}
 	
@@ -49,7 +49,7 @@ public class TaskControllerTest {
 		try {
 			controller.save(todo);
 		} catch (ValidationException e) {
-			Assert.assertEquals("Fill the due dates", e.getMessage());
+			Assert.assertEquals("Fill the due date", e.getMessage());
 		}
 	}
 	
